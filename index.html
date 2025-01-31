@@ -13,7 +13,7 @@
 
     <!-- FontAwesome CDN -->
     <script src="https://kit.fontawesome.com/27e7f6ea54.js" crossorigin="anonymous"></script>
-    
+
     <!-- DaisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -22,12 +22,12 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        clifford: "#da373d",
                         "btn-primary": "rgb(23, 152, 0)",
-                    }
-                }
-            }
-        }
+                    },
+                },
+            },
+        };
     </script>
 
     <style>
@@ -39,24 +39,30 @@
 
 <body class="font-sora">
     <header>
-        <nav>
-            <div class="navbar bg-base-100">
+        <!-- Nav Section -->
+        <nav class="container mx-auto border border-b-btn-primary lg:border-hidden p-3">
+            <div class="navbar bg-base-100 flex justify-between">
                 <!-- Nav Logo Section -->
-                <div class="flex-1">
-                    <img src="./c2-assets/logo-header.png" alt="logo">
+                <div>
+                    <img src="./c2-assets/logo-header.png" alt="logo" />
                 </div>
                 <!-- Nav Link Section -->
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
-                        <li><a>Item 1</a></li>
-                        <div class="navbar-end flex gap-2">
-
-                            <a class="btn rounded-lg px-7 py-2 font-normal border border-btn-primary">Login</a>
-                            <a class="btn bg-btn-primary text-white rounded-lg px-7 py-2 font-normal">Register</a>
-                        </div>
+                    <ul class="hidden lg:flex gap-8 text-xl mx-auto pl-20">
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                <!-- Nav Button Section -->
+                <div class="hidden lg:flex gap-3 items-center">
+                    <i class="fa-solid fa-magnifying-glass text-3xl"></i>
+                    <i class="fa-solid fa-cart-shopping text-3xl ml-2"></i>
+                    <a class="btn rounded-lg px-7 py-2 font-normal border border-btn-primary ml-4 text-xl">Login</a>
+                    <a class="btn bg-btn-primary text-white rounded-lg px-7 py-2 font-normal text-xl">Register</a>
                 </div>
+                <i class="fa-solid fa-bars lg:hidden text-3xl text-btn-primary"></i>
             </div>
         </nav>
+        <!-- Banner Section -->
     </header>
     <main></main>
     <footer></footer>
