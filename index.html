@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grocery Shop</title>
@@ -9,63 +8,108 @@
     <!-- Font CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- FontAwesome CDN -->
-    <script src="https://kit.fontawesome.com/27e7f6ea54.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/27e7f6ea54.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- DaisyUI CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: "#da373d",
-                        "btn-primary": "rgb(23, 152, 0)",
-                    },
-                },
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "btn-primary": "rgb(23, 152, 0)",
             },
-        };
+          },
+        },
+      };
     </script>
 
     <style>
-        .font-sora {
-            font-family: "Sora", serif;
-        }
+      .font-sora {
+        font-family: "Sora", serif;
+      }
     </style>
-</head>
+  </head>
 
-<body class="font-sora">
+  <body class="font-sora">
     <header>
-        <!-- Nav Section -->
-        <nav class="container mx-auto border border-b-btn-primary lg:border-hidden p-3">
-            <div class="navbar bg-base-100 flex justify-between">
-                <!-- Nav Logo Section -->
-                <div>
-                    <img src="./c2-assets/logo-header.png" alt="logo" />
-                </div>
-                <!-- Nav Link Section -->
-                    <ul class="hidden lg:flex gap-8 text-xl mx-auto pl-20">
-                        <li><a href="#">Product</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Contact us</a></li>
-                    </ul>
-                <!-- Nav Button Section -->
-                <div class="hidden lg:flex gap-3 items-center">
-                    <i class="fa-solid fa-magnifying-glass text-3xl"></i>
-                    <i class="fa-solid fa-cart-shopping text-3xl ml-2"></i>
-                    <a class="btn rounded-lg px-7 py-2 font-normal border border-btn-primary ml-4 text-xl">Login</a>
-                    <a class="btn bg-btn-primary text-white rounded-lg px-7 py-2 font-normal text-xl">Register</a>
-                </div>
-                <i class="fa-solid fa-bars lg:hidden text-3xl text-btn-primary"></i>
+      <!-- Nav Section -->
+      <nav
+        class="container mx-auto border border-b-btn-primary lg:border-hidden p-3"
+      >
+        <div class="navbar bg-base-100 flex justify-between">
+          <!-- Nav Logo Section -->
+          <div>
+            <img src="./c2-assets/logo-header.png" alt="logo" />
+          </div>
+          <!-- Nav Link Section -->
+          <ul class="hidden lg:flex gap-8 text-xl mx-auto pl-20 text-black">
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+          <!-- Nav Button Section -->
+          <div class="hidden lg:flex gap-3 items-center">
+            <i class="fa-solid fa-magnifying-glass text-3xl"></i>
+            <i class="fa-solid fa-cart-shopping text-3xl ml-2"></i>
+            <a
+              class="btn rounded-lg px-7 py-2 font-normal border border-btn-primary ml-4 text-xl"
+              >Login</a
+            >
+            <a
+              class="btn bg-btn-primary text-white rounded-lg px-7 py-2 font-normal text-xl"
+              >Register</a
+            >
+          </div>
+          <i class="fa-solid fa-bars lg:hidden text-3xl text-btn-primary"></i>
+        </div>
+      </nav>
+      <!-- Banner Section -->
+      <section class="my-24">
+        <div class="hero bg-gradient-to-t from-orange-50">
+          <div class="hero-content p-0 text-center flex flex-col">
+            <div>
+              <h1 class="text-5xl font-semibold text-black">
+                Freshness
+                <span class="text-btn-primary"
+                  >You Can<br />
+                  Count</span
+                >
+                On, Prices You'll Love!
+              </h1>
+              <p class="py-6 text-black">
+                Shop your daily essentials at unbeatable prices. From fresh
+                produce to pantry <br />
+                staples, we've got you covered every day!
+              </p>
             </div>
-        </nav>
-        <!-- Banner Section -->
+            <div>
+              <img
+                class="w-full"
+                src="./c2-assets/hero-vegetables.png"
+                alt="vegetables"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
     <main></main>
     <footer></footer>
-</body>
-
+  </body>
 </html>
