@@ -32,7 +32,8 @@
           extend: {
             colors: {
               clifford: "#da373d",
-              "btn-primary": "rgb(23, 152, 0)",
+              "btn-primary": "#179800",
+              "second-cl": "#EFEBE3",
             },
           },
         },
@@ -92,7 +93,7 @@
                 >
                 On, Prices You'll Love!
               </h1>
-              <p class="py-6 text-black">
+              <p class="py-6 text-gray-700 font-normal">
                 Shop your daily essentials at unbeatable prices. From fresh
                 produce to pantry <br />
                 staples, we've got you covered every day!
@@ -109,7 +110,48 @@
         </div>
       </section>
     </header>
-    <main></main>
+    <main class="container mx-auto">
+        <!-- Services Section -->
+        <section class="mb-16">
+            <h1 class="text-btn-primary text-4xl ml-5 font-bold">Services</h1>
+            <!-- Services Card Section -->
+            <div class="grid gap-5 lg:gap-4 lg:grid-cols-3 justify-center mt-8">
+                <div class="card shadow-xl bg-second-cl mx-4">
+                    <figure>
+                      <img class="size-40 bg-white rounded-full p-6 mt-8"
+                        src="./c2-assets/service.png"
+                        alt="24 hour Services" />
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title justify-center">24/7 Services</h2>
+                      <p class="text-center font-normal">Our 24/7 grocery store is open around the clock, offering fresh produce, pantry essentials, and daily necessities anytime you need them. Shop conveniently, day or night!</p class="text-center">
+                    </div>
+                  </div>
+                <div class="card shadow-xl bg-second-cl mx-4">
+                    <figure>
+                      <img class="size-40 bg-white rounded-full p-6 mt-8"
+                        src="./c2-assets/delivery.png"
+                        alt="free delivery" />
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title justify-center">Fast Delivery</h2>
+                      <p class="text-center font-normal">Get your groceries delivered fast! Fresh produce, essentials, and more—right to your doorstep in minutes. Shop now for quick and hassle-free delivery!</p class="text-center">
+                    </div>
+                  </div>
+                <div class="card shadow-xl bg-second-cl mx-4">
+                    <figure>
+                      <img class="size-40 bg-white rounded-full p-6 mt-8"
+                        src="./c2-assets/healthy.png"
+                        alt="healthy Product" />
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title justify-center">Healthy Products</h2>
+                      <p class="text-center font-normal">Shop fresh, organic, and nutritious groceries! From farm-fresh produce to wholesome snacks, we bring you the best for a healthier lifestyle.</p>
+                    </div>
+                  </div>
+            </div>
+        </section>
+    </main>
     <footer></footer>
   </body>
 </html>
