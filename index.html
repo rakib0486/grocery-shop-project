@@ -44,7 +44,7 @@
     </style>
 </head>
 
-<body class="font-sora">
+<body class="font-sora relative">
     <header>
         <!-- Nav Section -->
         <nav class="container mx-auto border border-b-btn-primary lg:border-hidden p-3">
@@ -70,11 +70,11 @@
             </div>
         </nav>
         <!-- Banner Section -->
-        <section class="my-24">
+        <section class="lg:my-24 my-12">
             <div class="hero bg-gradient-to-t from-orange-50">
                 <div class="hero-content p-0 text-center flex flex-col">
                     <div>
-                        <h1 class="text-5xl font-semibold text-black">
+                        <h1 class="text-5xl font-semibold text-black animate-bounce">
                             Freshness
                             <span class="text-btn-primary">You Can<br />
                                 Count</span>
@@ -301,6 +301,18 @@
         <!-- News Section -->
         <section></section>
     </main>
+    <!-- News Section -->
+    <section class="flex flex-col lg:flex-row items-center absolute bottom-[600px] lg:bottom-[450px] left-0 lg:left-60 container mx-auto bg-second-cl rounded-xl py-4 lg:py-14 px-4 lg:px-24">
+        <div class="ml-0 lg:ml-28">
+            <img src="./c2-assets/vegetable-busket.png" alt="vegetable-busket">
+        </div>
+        <div class="ml-0 lg:ml-28">
+            <h2 class="font-semibold text-4xl mb-5">Get Grocery News!</h2>
+            <p class="text-xl">Exclusive training tips, ticks, product deals and more.</p>
+            <input class="block py-5 pl-5 pr-64 rounded-xl mt-9 mb-9 placeholder:text-gray-300 placeholder:text-lg" type="email" name="email" id="email" placeholder="Enter email...">
+            <button class="btn bg-btn-primary text-white rounded-lg px-7 py-2 font-normal text-xl">Subscribe</button>
+        </div>
+    </section>
     <!-- Footer Section -->
     <footer class="footer bg-btn-primary p-4 lg:p-36 pt-72 lg:pt-96 text-white">
         <div>
